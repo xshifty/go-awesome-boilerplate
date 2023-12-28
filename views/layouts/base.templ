@@ -1,0 +1,20 @@
+package layouts
+
+import (
+    "github.com/xshifty/go-awesome-boilerplate/views/components"
+)
+
+templ Base(page templ.Component) {
+    <html>
+	    <head>
+	        <title>Go Awesome Boilerplate</title>
+	        <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+        </head>
+		<body>
+		    <div class="container">
+		        <div id="navigation">@components.Navigation()</div>
+		        <div id="content">@page</div>
+            </div>
+        </body>
+    </html>
+}

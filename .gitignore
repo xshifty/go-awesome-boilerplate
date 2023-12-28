@@ -1,0 +1,6 @@
+tmp
+vendor
+build
+.idea
+static
+*_templ.go

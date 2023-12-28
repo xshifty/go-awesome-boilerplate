@@ -1,0 +1,15 @@
+package components
+
+templ Link(label, pageUrl, contentUrl string) {
+    <a href={ templ.SafeURL(pageUrl) } hx-get={ contentUrl } hx-push-url={ pageUrl } hx-trigger="click" hx-target="#content">{ label }</a>
+}
+
+templ Navigation () {
+    <div class="navbar">
+        <ul>
+        for _, link := range GetLinks() {
+            <li>@Link(link.label, link.pageUrl, link.contentUrl)</li>
+        }
+        </ul>
+    </div>
+}
