@@ -6,9 +6,10 @@ help:
 	@echo "make run                 initialize dev server"
 
 setup:
-	go mod tidy
 	go install github.com/cosmtrek/air@latest
 	go install github.com/a-h/templ/cmd/templ@latest
+	templ generate
+	go mod tidy
 
 templates:
 	templ generate

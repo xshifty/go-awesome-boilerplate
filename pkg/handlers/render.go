@@ -9,12 +9,6 @@ import (
 	"net/http"
 )
 
-func NewComponentHandler(ctx context.Context, c templ.Component) http.HandlerFunc {
-	return func(w http.ResponseWriter, r *http.Request) {
-		Render(ctx, c, w)
-	}
-}
-
 func Render(ctx context.Context, c templ.Component, w http.ResponseWriter) {
 	if err := c.Render(ctx, w); err != nil {
 		err = layouts.Error(errors.Join(
@@ -28,3 +22,4 @@ func Render(ctx context.Context, c templ.Component, w http.ResponseWriter) {
 		}
 	}
 }
+

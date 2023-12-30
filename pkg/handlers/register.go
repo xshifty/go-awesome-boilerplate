@@ -38,8 +38,7 @@ func Register(optsFunc ...OptsFunc) *chi.Mux {
 
 	r.Handle(fmt.Sprintf("%s*", opts.staticPrefix), http.StripPrefix(opts.staticPrefix, fs))
 
-	registerPages(r, opts.ctx)
-	registerComponents(r, opts.ctx)
+  registerRoutes(r, opts.ctx)
 
 	return r
 }
