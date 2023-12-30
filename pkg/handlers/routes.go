@@ -1,11 +1,10 @@
 package handlers
 
 import (
-	"context"
 	"github.com/go-chi/chi/v5"
 )
 
-func registerRoutes(r *chi.Mux, ctx context.Context) {
+func registerRoutes(r *chi.Mux) {
 	r.Get("/", homeHandler)
 	r.Get("/pages/home", homeContentsHandler)
 
