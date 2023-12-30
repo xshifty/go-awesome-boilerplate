@@ -3,7 +3,7 @@ package handlers
 import (
 	"context"
 	"github.com/go-chi/chi/v5"
-	"github.com/xshifty/go-awesome-boilerplate/views/components"
+	"github.com/xshifty/go-awesome-boilerplate/pkg/components"
 )
 
 func registerComponents(r *chi.Mux, ctx context.Context) {

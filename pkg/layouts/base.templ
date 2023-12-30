@@ -1,13 +1,16 @@
 package layouts
 
 import (
-    "github.com/xshifty/go-awesome-boilerplate/views/components"
+    "github.com/xshifty/go-awesome-boilerplate/pkg/components"
 )
 
 templ Base(page templ.Component) {
+    <!DOCTYPE html>
     <html>
 	    <head>
+	        <meta charset="utf-8" />
 	        <title>Go Awesome Boilerplate</title>
+	        <meta name="viewport" content="width=device-width, initial-scale=1" />
 	        <script src="https://unpkg.com/htmx.org@1.9.10"></script>
         </head>
 		<body>

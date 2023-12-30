@@ -1,9 +1,15 @@
 package components
 
+import "fmt"
+
 type link struct {
 	label      string
 	pageUrl    string
 	contentUrl string
+}
+
+func e(a, b int) string {
+	return fmt.Sprint(a / b)
 }
 
 func GetLinks() []link {

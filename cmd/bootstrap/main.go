@@ -3,7 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/xshifty/go-awesome-boilerplate/handlers"
+	"github.com/xshifty/go-awesome-boilerplate/pkg/handlers"
 	"net/http"
 )
 

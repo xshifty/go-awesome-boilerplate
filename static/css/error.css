@@ -1,0 +1,33 @@
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 1em auto;
+    padding: 0 15px;
+    border: 1px solid #d00;
+    background-color: #fdd;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 15px 0;
+    border-bottom: 1px solid #d00;
+}
+
+p {
+    margin: 0;
+    padding: 15px 0;
+}
+
+.error-message {
+    white-space: pre-wrap;
+}

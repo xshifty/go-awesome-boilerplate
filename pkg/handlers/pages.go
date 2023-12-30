@@ -3,8 +3,8 @@ package handlers
 import (
 	"context"
 	"github.com/go-chi/chi/v5"
-	"github.com/xshifty/go-awesome-boilerplate/views/layouts"
-	"github.com/xshifty/go-awesome-boilerplate/views/pages"
+	"github.com/xshifty/go-awesome-boilerplate/pkg/layouts"
+	"github.com/xshifty/go-awesome-boilerplate/pkg/pages"
 )
 
 func registerPages(r *chi.Mux, ctx context.Context) {
